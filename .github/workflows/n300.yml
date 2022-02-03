@@ -6,7 +6,7 @@
 # Blog: https://P3TERX.com
 #=================================================
 
-name: Build OpenWrt
+name: Build OpenWrt-n300
 
 on:
   repository_dispatch:
@@ -14,8 +14,8 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: true
-        default: 'true'
+        required: false
+        default: 'false'
 #  release:
 #    types: published
   push:
